@@ -4,5 +4,8 @@ my_lambda = lambda {|name| puts "lambda says hello " + name.to_s }
 my_proc.call("jerry")
 my_lambda.call("jerry")
 
+
 my_proc.call
 my_lambda.call
+
+# my_lambda.call("jerry","kramer") # more args fail too
