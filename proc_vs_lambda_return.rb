@@ -20,4 +20,15 @@ def call_proc(prc)
   puts value
 end
 
+# comment this out if you want to exercise the call_block method
 call_proc(my_proc)
+
+def call_block(&block)
+  puts block.call
+  puts "after calling block"
+end
+
+call_block do
+   puts "in block" 
+   return 
+end
